@@ -47,7 +47,7 @@ function AppContent() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 40 }}
               transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="bg-void"
+              className="dark:bg-void bg-slate-50"
             >
               <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-24 py-16 lg:py-24 space-y-20">
 

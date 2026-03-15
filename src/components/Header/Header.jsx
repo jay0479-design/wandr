@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Ticket, Menu, X, Globe, Compass } from 'lucide-react';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const NAV_LINKS = [
   { href: '#destinations', label: '여행지 탐색' },
@@ -98,6 +99,9 @@ export default function Header({ onCouponClick }) {
           >
             <Globe size={16} aria-hidden="true" />
           </button>
+
+          {/* 테마 토글 */}
+          <ThemeToggle />
 
           {/* 햄버거 (모바일) */}
           <button

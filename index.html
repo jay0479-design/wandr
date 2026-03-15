@@ -15,6 +15,10 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- 테마 플래시(FOUC) 방지: React 마운트 전 클래스 선적용 -->
+    <script>
+      (function(){var t=localStorage.getItem('wandr-theme')||'dark';document.documentElement.classList.add(t);})();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

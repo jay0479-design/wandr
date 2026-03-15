@@ -1,0 +1,32 @@
+{
+  "projectName": "wandr",
+  "description": "원스톱 여행 정보 통합 플랫폼 — 국내 2030 여행자 대상 프리미엄 대시보드",
+  "techStack": ["react-19", "vite-8", "tailwindcss-3", "framer-motion-12", "lucide-react"],
+  "designSystem": {
+    "theme": "glassmorphism-dark-first",
+    "colorScheme": "aurora-accent",
+    "typography": "pretendard-variable",
+    "lightMode": "css-variable-based"
+  },
+  "a11y": "WCAG-2.2-AA",
+  "aiModel": "claude-sonnet-4-6",
+  "conventions": {
+    "components": "functional-with-hooks",
+    "styling": "tailwind-utility-first",
+    "stateManagement": "react-context-with-useReducer",
+    "animation": "framer-motion-declarative",
+    "fileNaming": "PascalCase-components-camelCase-utils"
+  },
+  "buildTarget": {
+    "jsGzip": "< 130KB",
+    "cssGzip": "< 20KB",
+    "lighthouseA11y": ">= 90",
+    "lighthousePerf": ">= 85"
+  },
+  "immutableRules": [
+    "semantic-html-structure",
+    "aria-attributes",
+    "framer-motion-animation-structure",
+    "wcag-aa-contrast-ratios"
+  ]
+}

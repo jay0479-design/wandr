@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Wind, Droplets, Eye, Thermometer, RefreshCw, Clock } from 'lucide-react';
+import { Wind, Droplets, Eye, Thermometer, RefreshCw, Clock, WifiOff } from 'lucide-react';
 import WeatherIcon from './WeatherIcon';
 
 // ── Mock 날씨 데이터 (API 키 없이 동작) ──────────────────────
@@ -56,25 +56,40 @@ function DetailItem({ icon: Icon, label, value, className = '' }) {
 }
 
 export default function WeatherWidget({ city }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [weather, setWeather] = useState(null);
   const [updatedAt, setUpdatedAt] = useState(new Date());
 
-  const weather = MOCK_WEATHER[city] || MOCK_WEATHER['Tokyo'];
-  const localTime = useLocalTime(weather.localTime);
-
-  const refresh = useCallback(() => {
+  const fetchWeather = useCallback(() => {
     setLoading(true);
-    setTimeout(() => { setLoading(false); setUpdatedAt(new Date()); }, 800);
-  }, []);
+    setError(null);
+    setTimeout(() => {
+      const data = MOCK_WEATHER[city];
+      if (!data) {
+        setError('날씨 정보를 불러오지 못했습니다.');
+        setLoading(false);
+        return;
+      }
+      setWeather(data);
+      setUpdatedAt(new Date());
+      setLoading(false);
+    }, 600);
+  }, [city]);
 
+  useEffect(() => { fetchWeather(); }, [fetchWeather]);
+
+  const localTime = useLocalTime(weather?.localTime ?? 'Asia/Seoul');
   const updatedStr = updatedAt.toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
 
   // 5일 예보: 기온 오프셋 적용
-  const forecast = FIVE_DAY_FORECAST.map((f, i) => ({
-    ...f,
-    high: weather.temp + parseInt(f.high) + (i === 0 ? 0 : -1),
-    low:  weather.temp + parseInt(f.low)  + (i === 0 ? 0 : -2),
-  }));
+  const forecast = weather
+    ? FIVE_DAY_FORECAST.map((f, i) => ({
+        ...f,
+        high: weather.temp + parseInt(f.high) + (i === 0 ? 0 : -1),
+        low:  weather.temp + parseInt(f.low)  + (i === 0 ? 0 : -2),
+      }))
+    : [];
 
   return (
     <article
@@ -96,7 +111,7 @@ export default function WeatherWidget({ city }) {
             {updatedStr} 업데이트
           </time>
           <button
-            onClick={refresh}
+            onClick={fetchWeather}
             aria-label="날씨 정보 새로고침"
             className="w-7 h-7 rounded-full glass flex items-center justify-center text-[#9090A8] hover:text-white transition-colors"
           >
@@ -110,7 +125,38 @@ export default function WeatherWidget({ city }) {
       </header>
 
       <AnimatePresence mode="wait">
-        {!loading && (
+        {/* 에러 상태 */}
+        {!loading && error && (
+          <motion.div
+            key="error"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.4 }}
+            className="px-6 pb-8 flex flex-col items-center justify-center gap-4 text-center"
+            role="alert"
+            aria-live="assertive"
+          >
+            <div className="w-14 h-14 rounded-full bg-[rgba(255,107,107,0.12)] border border-[rgba(255,107,107,0.25)] flex items-center justify-center mt-4">
+              <WifiOff size={24} aria-hidden="true" className="text-[#FF6B6B]" />
+            </div>
+            <div className="space-y-1">
+              <p className="text-sm font-bold text-white">{error}</p>
+              <p className="text-xs text-[#5A5A70]">네트워크 상태를 확인하고 다시 시도해 주세요.</p>
+            </div>
+            <button
+              onClick={fetchWeather}
+              aria-label="날씨 정보 다시 불러오기"
+              className="flex items-center gap-2 px-5 py-2 rounded-full bg-aurora-h text-white text-xs font-bold hover:shadow-glow-sm transition-shadow"
+            >
+              <RefreshCw size={12} aria-hidden="true" />
+              다시 시도
+            </button>
+          </motion.div>
+        )}
+
+        {/* 정상 데이터 상태 */}
+        {!loading && !error && weather && (
           <motion.div
             key={city}
             initial={{ opacity: 0, y: 12 }}

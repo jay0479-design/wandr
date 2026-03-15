@@ -52,14 +52,15 @@ export default function TourCards({ slug, destinationName }) {
       {/* 가로 스크롤 슬라이더 */}
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto pb-3 no-scrollbar scroll-smooth"
+        className="flex gap-4 overflow-x-auto pb-3 no-scrollbar scroll-smooth snap-x snap-mandatory overscroll-x-contain"
         role="list"
         aria-label={`${destinationName} 투어 목록`}
         tabIndex={0}
         aria-describedby="tour-scroll-hint"
+        style={{ WebkitOverflowScrolling: 'touch' }}
       >
         {tours.map((tour, i) => (
-          <div key={tour.id} role="listitem">
+          <div key={tour.id} role="listitem" className="snap-start flex-shrink-0">
             <TourCard tour={tour} index={i} />
           </div>
         ))}

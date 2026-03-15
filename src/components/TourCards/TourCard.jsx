@@ -38,7 +38,7 @@ export default function TourCard({ tour, index }) {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.08, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
       whileHover={{ y: -4, transition: { type: 'spring', stiffness: 380, damping: 30 } }}
-      className="glass glass-hover rounded-2xl overflow-hidden flex-shrink-0 w-72 sm:w-80"
+      className="glass glass-hover rounded-2xl overflow-hidden w-72 sm:w-80"
       aria-label={`${tour.title} — ${tour.provider} 투어`}
     >
       {/* 썸네일 */}

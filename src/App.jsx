@@ -8,9 +8,11 @@ import VlogFeed from './components/VlogFeed/VlogFeed';
 import TipsAccordion from './components/TipsAccordion/TipsAccordion';
 import CouponFAB from './components/CouponSystem/CouponFAB';
 import Footer from './components/Footer/Footer';
+import ErrorBoundary from './components/ErrorBoundary';
+import { AppProvider } from './context/AppContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function App() {
+function AppContent() {
   const [selectedDestination, setSelectedDestination] = useState(null);
   const [isCouponOpen, setIsCouponOpen] = useState(false);
 
@@ -83,7 +85,9 @@ export default function App() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.25, duration: 0.6 }}
                   >
-                    <WeatherWidget city={selectedDestination.weatherCity} />
+                    <ErrorBoundary section="날씨 위젯" minimal>
+                      <WeatherWidget city={selectedDestination.weatherCity} />
+                    </ErrorBoundary>
                   </motion.div>
                   <motion.div
                     className="lg:col-span-2"
@@ -91,24 +95,30 @@ export default function App() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.35, duration: 0.6 }}
                   >
-                    <TourCards
-                      slug={selectedDestination.slug}
-                      destinationName={selectedDestination.name}
-                    />
+                    <ErrorBoundary section="투어 카드" minimal>
+                      <TourCards
+                        slug={selectedDestination.slug}
+                        destinationName={selectedDestination.name}
+                      />
+                    </ErrorBoundary>
                   </motion.div>
                 </div>
 
                 {/* 유튜브 브이로그 피드 */}
-                <VlogFeed
-                  slug={selectedDestination.slug}
-                  destinationName={selectedDestination.name}
-                />
+                <ErrorBoundary section="브이로그 피드">
+                  <VlogFeed
+                    slug={selectedDestination.slug}
+                    destinationName={selectedDestination.name}
+                  />
+                </ErrorBoundary>
 
                 {/* 실전 팁 아코디언 */}
-                <TipsAccordion
-                  slug={selectedDestination.slug}
-                  destinationName={selectedDestination.name}
-                />
+                <ErrorBoundary section="여행 팁">
+                  <TipsAccordion
+                    slug={selectedDestination.slug}
+                    destinationName={selectedDestination.name}
+                  />
+                </ErrorBoundary>
               </div>
             </motion.section>
           )}
@@ -123,5 +133,13 @@ export default function App() {
         onToggle={() => setIsCouponOpen((p) => !p)}
       />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <AppProvider>
+      <AppContent />
+    </AppProvider>
   );
 }

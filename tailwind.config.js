@@ -79,11 +79,100 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
+      // ─── Typography ───────────────────────────────────────────
+      fontSize: {
+        // Display scale (Hero / 섹션 헤드)
+        'display-2xl': ['4.5rem',   { lineHeight: '1.05', fontWeight: '900', letterSpacing: '-0.03em' }],
+        'display-xl':  ['3.75rem',  { lineHeight: '1.05', fontWeight: '900', letterSpacing: '-0.03em' }],
+        'display-lg':  ['3rem',     { lineHeight: '1.1',  fontWeight: '800', letterSpacing: '-0.02em' }],
+        'display-md':  ['2.25rem',  { lineHeight: '1.15', fontWeight: '800', letterSpacing: '-0.015em' }],
+        'display-sm':  ['1.875rem', { lineHeight: '1.2',  fontWeight: '700' }],
+        // Body scale
+        'body-xl':     ['1.25rem',  { lineHeight: '1.75', fontWeight: '400' }],
+        'body-lg':     ['1.125rem', { lineHeight: '1.7',  fontWeight: '400' }],
+        'body-md':     ['1rem',     { lineHeight: '1.6',  fontWeight: '400' }],
+        'body-sm':     ['0.875rem', { lineHeight: '1.55', fontWeight: '400' }],
+        'body-xs':     ['0.8125rem',{ lineHeight: '1.5',  fontWeight: '400' }],
+        // UI / Label scale
+        'label-lg':    ['0.875rem', { lineHeight: '1',    fontWeight: '700', letterSpacing: '0.05em' }],
+        'label-md':    ['0.75rem',  { lineHeight: '1',    fontWeight: '700', letterSpacing: '0.1em'  }],
+        'label-sm':    ['0.6875rem',{ lineHeight: '1',    fontWeight: '700', letterSpacing: '0.14em' }],
+        // Eyebrow
+        'eyebrow':     ['0.75rem',  { lineHeight: '1',    fontWeight: '700', letterSpacing: '0.28em' }],
+      },
+      fontWeight: {
+        thin:       '100',
+        extralight: '200',
+        light:      '300',
+        normal:     '400',
+        medium:     '500',
+        semibold:   '600',
+        bold:       '700',
+        extrabold:  '800',
+        black:      '900',
+      },
+      lineHeight: {
+        none:       '1',
+        tightest:   '1.05',
+        tighter:    '1.1',
+        tight:      '1.2',
+        snug:       '1.375',
+        normal:     '1.5',
+        relaxed:    '1.6',
+        loose:      '1.7',
+        looser:     '1.75',
+        loosest:    '2',
+      },
+      // ─── Spacing ──────────────────────────────────────────────
+      spacing: {
+        // 미세 조정 (px 단위 정밀 제어)
+        '0.5':  '0.125rem',   //  2px
+        '1.5':  '0.375rem',   //  6px
+        '2.5':  '0.625rem',   // 10px
+        '3.5':  '0.875rem',   // 14px
+        // 컴포넌트 내부 패딩
+        '4.5':  '1.125rem',   // 18px
+        '5.5':  '1.375rem',   // 22px
+        '6.5':  '1.625rem',   // 26px
+        '7.5':  '1.875rem',   // 30px
+        // 섹션 레벨 간격
+        '13':   '3.25rem',    // 52px
+        '15':   '3.75rem',    // 60px
+        '18':   '4.5rem',     // 72px
+        '22':   '5.5rem',     // 88px
+        '26':   '6.5rem',     // 104px
+        '30':   '7.5rem',     // 120px
+        '34':   '8.5rem',     // 136px
+        '38':   '9.5rem',     // 152px
+        // 레이아웃 레벨 간격
+        '42':   '10.5rem',    // 168px
+        '50':   '12.5rem',    // 200px
+        '60':   '15rem',      // 240px
+        '72':   '18rem',      // 288px
+        '80':   '20rem',      // 320px
+        '96':   '24rem',      // 384px
+        // 최대 너비 커스텀
+        '120':  '30rem',      // 480px
+        '160':  '40rem',      // 640px
+        '200':  '50rem',      // 800px
+      },
+      // ─── Border Radius ────────────────────────────────────────
+      borderRadius: {
+        none:   '0',
+        xs:     '0.125rem',   //  2px — 미세 sharp
+        sm:     '0.25rem',    //  4px — 버튼 모서리 최소
+        md:     '0.375rem',   //  6px — 뱃지, 태그
+        DEFAULT:'0.5rem',     //  8px — 기본 카드
+        lg:     '0.75rem',    // 12px — 인풋, 작은 카드
+        xl:     '1rem',       // 16px — 카드 컴포넌트
+        '2xl':  '1.25rem',    // 20px — 큰 카드
+        '3xl':  '1.5rem',     // 24px — 모달, 드롭다운
+        '4xl':  '2rem',       // 32px — 대형 모달
+        '5xl':  '2.5rem',     // 40px — FAB, 원형에 가까운 요소
+        full:   '9999px',     // 완전 원형 (pill, avatar)
+      },
       screens: {
         xs: '375px',
-      },
-      borderRadius: {
-        '4xl': '2rem',
       },
     },
   },

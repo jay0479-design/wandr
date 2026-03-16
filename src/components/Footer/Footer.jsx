@@ -23,7 +23,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-[#5A5A70] leading-relaxed max-w-xs">
-              세계 어디서든, 가장 정교하고 아름다운 여행 정보를 한눈에. 한국 청년을 위한 프리미엄 여행 대시보드.
+              여행은 정답이 없어, Wandr와 함께 지금 바로 떠나자!
             </p>
             {/* SNS */}
             <div className="flex gap-3" aria-label="소셜 미디어 링크">

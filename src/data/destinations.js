@@ -18,7 +18,11 @@ export const destinations = [
     currency: 'JPY',
     exchangeRate: 9.2,
     timezone: 'Asia/Tokyo',
-    highlight: '신주쿠 골든가이, 시부야 스크램블, 아사쿠사',
+    highlight: [
+      { name: '신주쿠 골든가이', url: 'https://www.google.com/search?q=신주쿠+골든가이+여행정보' },
+      { name: '시부야 스크램블', url: 'https://www.google.com/search?q=시부야+스크램블+여행정보' },
+      { name: '아사쿠사', url: 'https://www.google.com/search?q=아사쿠사+여행정보' },
+    ],
   },
   {
     id: 'paris',
@@ -38,7 +42,11 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Paris',
-    highlight: '에펠탑, 루브르 박물관, 몽마르트르',
+    highlight: [
+      { name: '에펠탑', url: 'https://www.google.com/search?q=에펠탑+관광정보' },
+      { name: '루브르 박물관', url: 'https://www.google.com/search?q=루브르+박물관+관광정보' },
+      { name: '몽마르트르', url: 'https://www.google.com/search?q=몽마르트르+여행정보' },
+    ],
   },
   {
     id: 'bali',
@@ -58,7 +66,11 @@ export const destinations = [
     currency: 'IDR',
     exchangeRate: 0.085,
     timezone: 'Asia/Makassar',
-    highlight: '우붓 라이스 테라스, 탄롯 사원, 꾸따 비치',
+    highlight: [
+      { name: '우붓 라이스 테라스', url: 'https://www.google.com/search?q=우붓+라이스+테라스+여행정보' },
+      { name: '탄롯 사원', url: 'https://www.google.com/search?q=탄롯+사원+발리+여행정보' },
+      { name: '꾸따 비치', url: 'https://www.google.com/search?q=꾸따+비치+발리+여행정보' },
+    ],
   },
   {
     id: 'new-york',
@@ -78,7 +90,11 @@ export const destinations = [
     currency: 'USD',
     exchangeRate: 1340,
     timezone: 'America/New_York',
-    highlight: '타임스퀘어, 센트럴파크, 브루클린 브리지',
+    highlight: [
+      { name: '타임스퀘어', url: 'https://www.google.com/search?q=타임스퀘어+뉴욕+여행정보' },
+      { name: '센트럴파크', url: 'https://www.google.com/search?q=센트럴파크+뉴욕+여행정보' },
+      { name: '브루클린 브리지', url: 'https://www.google.com/search?q=브루클린+브리지+여행정보' },
+    ],
   },
   {
     id: 'santorini',
@@ -98,7 +114,11 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Athens',
-    highlight: '이아 선셋, 피라 마을, 레드 비치',
+    highlight: [
+      { name: '이아 선셋', url: 'https://www.google.com/search?q=산토리니+이아+선셋+여행정보' },
+      { name: '피라 마을', url: 'https://www.google.com/search?q=산토리니+피라+마을+여행정보' },
+      { name: '레드 비치', url: 'https://www.google.com/search?q=산토리니+레드+비치+여행정보' },
+    ],
   },
   {
     id: 'prague',
@@ -118,7 +138,11 @@ export const destinations = [
     currency: 'CZK',
     exchangeRate: 60,
     timezone: 'Europe/Prague',
-    highlight: '카를교, 구시가지 광장, 프라하 성',
+    highlight: [
+      { name: '카를교', url: 'https://www.google.com/search?q=프라하+카를교+여행정보' },
+      { name: '구시가지 광장', url: 'https://www.google.com/search?q=프라하+구시가지+광장+여행정보' },
+      { name: '프라하 성', url: 'https://www.google.com/search?q=프라하+성+여행정보' },
+    ],
   },
   {
     id: 'dubai',
@@ -138,7 +162,11 @@ export const destinations = [
     currency: 'AED',
     exchangeRate: 365,
     timezone: 'Asia/Dubai',
-    highlight: '버즈 칼리파, 팜 아일랜드, 두바이 사막 사파리',
+    highlight: [
+      { name: '버즈 칼리파', url: 'https://www.google.com/search?q=버즈+칼리파+두바이+여행정보' },
+      { name: '팜 아일랜드', url: 'https://www.google.com/search?q=팜+아일랜드+두바이+여행정보' },
+      { name: '두바이 사막 사파리', url: 'https://www.google.com/search?q=두바이+사막+사파리+여행정보' },
+    ],
   },
   {
     id: 'lisbon',
@@ -158,7 +186,11 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Lisbon',
-    highlight: '알파마 지구, 벨렘 탑, 트램 28번',
+    highlight: [
+      { name: '알파마 지구', url: 'https://www.google.com/search?q=리스본+알파마+지구+여행정보' },
+      { name: '벨렘 탑', url: 'https://www.google.com/search?q=리스본+벨렘+탑+여행정보' },
+      { name: '트램 28번', url: 'https://www.google.com/search?q=리스본+트램+28번+여행정보' },
+    ],
   },
   {
     id: 'barcelona',
@@ -178,7 +210,12 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Madrid',
-    highlight: '사그라다 파밀리아, 구엘공원, 고딕지구, 보케리아 시장',
+    highlight: [
+      { name: '사그라다 파밀리아', url: 'https://www.google.com/search?q=사그라다+파밀리아+여행정보' },
+      { name: '구엘공원', url: 'https://www.google.com/search?q=바르셀로나+구엘공원+여행정보' },
+      { name: '고딕지구', url: 'https://www.google.com/search?q=바르셀로나+고딕지구+여행정보' },
+      { name: '보케리아 시장', url: 'https://www.google.com/search?q=바르셀로나+보케리아+시장+여행정보' },
+    ],
   },
   {
     id: 'madrid',
@@ -198,7 +235,12 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Madrid',
-    highlight: '프라도 미술관, 레티로 공원, 왕궁, 산미구엘 시장',
+    highlight: [
+      { name: '프라도 미술관', url: 'https://www.google.com/search?q=마드리드+프라도+미술관+여행정보' },
+      { name: '레티로 공원', url: 'https://www.google.com/search?q=마드리드+레티로+공원+여행정보' },
+      { name: '왕궁', url: 'https://www.google.com/search?q=마드리드+왕궁+여행정보' },
+      { name: '산미구엘 시장', url: 'https://www.google.com/search?q=마드리드+산미구엘+시장+여행정보' },
+    ],
   },
   {
     id: 'seville',
@@ -218,7 +260,12 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Madrid',
-    highlight: '세비야 대성당, 알카사르, 스페인 광장, 트리아나 지구',
+    highlight: [
+      { name: '세비야 대성당', url: 'https://www.google.com/search?q=세비야+대성당+여행정보' },
+      { name: '알카사르', url: 'https://www.google.com/search?q=세비야+알카사르+여행정보' },
+      { name: '스페인 광장', url: 'https://www.google.com/search?q=세비야+스페인+광장+여행정보' },
+      { name: '트리아나 지구', url: 'https://www.google.com/search?q=세비야+트리아나+지구+여행정보' },
+    ],
   },
   {
     id: 'granada',
@@ -238,7 +285,11 @@ export const destinations = [
     currency: 'EUR',
     exchangeRate: 1480,
     timezone: 'Europe/Madrid',
-    highlight: '알함브라 궁전, 알바이신 지구, 사크로몬테 동굴',
+    highlight: [
+      { name: '알함브라 궁전', url: 'https://www.google.com/search?q=알함브라+궁전+그라나다+여행정보' },
+      { name: '알바이신 지구', url: 'https://www.google.com/search?q=그라나다+알바이신+지구+여행정보' },
+      { name: '사크로몬테 동굴', url: 'https://www.google.com/search?q=그라나다+사크로몬테+동굴+여행정보' },
+    ],
   },
 ];
 

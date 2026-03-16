@@ -18,7 +18,11 @@ export const domesticCities = [
     currency: 'KRW',
     exchangeRate: 1,
     timezone: 'Asia/Seoul',
-    highlight: '묵호등대, 논골담길 벽화마을, 묵호항 수산시장',
+    highlight: [
+      { name: '묵호등대', url: 'https://www.google.com/search?q=묵호등대+관광정보' },
+      { name: '논골담길 벽화마을', url: 'https://www.google.com/search?q=논골담길+벽화마을' },
+      { name: '묵호항 수산시장', url: 'https://www.google.com/search?q=묵호항+수산시장' },
+    ],
   },
   {
     id: 'yeongwol',
@@ -38,7 +42,12 @@ export const domesticCities = [
     currency: 'KRW',
     exchangeRate: 1,
     timezone: 'Asia/Seoul',
-    highlight: '청령포, 별마로천문대, 선돌, 김삿갓면',
+    highlight: [
+      { name: '청령포', url: 'https://www.google.com/search?q=영월+청령포+관광' },
+      { name: '별마로천문대', url: 'https://www.google.com/search?q=별마로천문대' },
+      { name: '선돌', url: 'https://www.google.com/search?q=영월+선돌+관광' },
+      { name: '김삿갓면', url: 'https://www.google.com/search?q=영월+김삿갓면+여행' },
+    ],
   },
   {
     id: 'gunsan',
@@ -58,7 +67,11 @@ export const domesticCities = [
     currency: 'KRW',
     exchangeRate: 1,
     timezone: 'Asia/Seoul',
-    highlight: '경암동 철길마을, 신흥동 일본식가옥, 이성당 빵집',
+    highlight: [
+      { name: '경암동 철길마을', url: 'https://www.google.com/search?q=경암동+철길마을' },
+      { name: '신흥동 일본식가옥', url: 'https://www.google.com/search?q=군산+신흥동+일본식가옥' },
+      { name: '이성당 빵집', url: 'https://www.google.com/search?q=군산+이성당' },
+    ],
   },
   {
     id: 'gangneung',
@@ -78,7 +91,12 @@ export const domesticCities = [
     currency: 'KRW',
     exchangeRate: 1,
     timezone: 'Asia/Seoul',
-    highlight: '안목해변 카페거리, 경포대, 정동진, 초당순두부마을',
+    highlight: [
+      { name: '안목해변 카페거리', url: 'https://www.google.com/search?q=안목해변+카페거리' },
+      { name: '경포대', url: 'https://www.google.com/search?q=강릉+경포대' },
+      { name: '정동진', url: 'https://www.google.com/search?q=정동진+관광' },
+      { name: '초당순두부마을', url: 'https://www.google.com/search?q=강릉+초당순두부마을' },
+    ],
   },
   {
     id: 'tongyeong',
@@ -98,6 +116,11 @@ export const domesticCities = [
     currency: 'KRW',
     exchangeRate: 1,
     timezone: 'Asia/Seoul',
-    highlight: '동피랑벽화마을, 통영케이블카, 중앙시장, 한산도',
+    highlight: [
+      { name: '동피랑벽화마을', url: 'https://www.google.com/search?q=동피랑+벽화마을' },
+      { name: '통영케이블카', url: 'https://www.google.com/search?q=통영케이블카' },
+      { name: '중앙시장', url: 'https://www.google.com/search?q=통영+중앙시장' },
+      { name: '한산도', url: 'https://www.google.com/search?q=통영+한산도' },
+    ],
   },
 ];

@@ -82,6 +82,23 @@ function AppContent() {
                       </span>
                     ))}
                   </div>
+                  {/* 주요 명소 링크 */}
+                  {Array.isArray(selectedDestination.highlight) && selectedDestination.highlight.length > 0 && (
+                    <div className="flex flex-wrap justify-center gap-2 pt-1" aria-label="주요 명소">
+                      {selectedDestination.highlight.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${item.name} 정보 보기 (새 탭)`}
+                          className="text-xs font-medium px-3 py-1 rounded-full glass border border-white/10 text-[#9090A8] hover:text-white hover:border-white/20 transition-colors duration-200"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </motion.div>
 
                 {/* 위젯 그리드: 날씨(1/3) + 투어(2/3) */}

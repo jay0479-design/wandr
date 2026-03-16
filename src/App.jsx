@@ -6,6 +6,7 @@ import WeatherWidget from './components/WeatherWidget/WeatherWidget';
 import TourCards from './components/TourCards/TourCards';
 import VlogFeed from './components/VlogFeed/VlogFeed';
 import TipsAccordion from './components/TipsAccordion/TipsAccordion';
+import DomesticCities from './components/DomesticCities/DomesticCities';
 import CouponFAB from './components/CouponSystem/CouponFAB';
 import Footer from './components/Footer/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -36,7 +37,13 @@ function AppContent() {
           onSelect={setSelectedDestination}
         />
 
-        {/* S03 — 상세 정보 패널 (여행지 선택 시 표시) */}
+        {/* S03 — 국내 소도시 섹션 */}
+        <DomesticCities
+          selectedDestination={selectedDestination}
+          onSelect={setSelectedDestination}
+        />
+
+        {/* S04 — 상세 정보 패널 (여행지 선택 시 표시) */}
         <AnimatePresence>
           {selectedDestination && (
             <motion.section

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Star, ArrowUpRight } from 'lucide-react';
 
 const BUDGET_LABEL = { 저렴: '💰 알뜰', 중간: '💳 중간', 고급: '✨ 럭셔리' };
@@ -8,7 +9,11 @@ const BUDGET_CLASS = {
   고급: 'bg-[rgba(255,107,107,0.12)] text-[#FF9999] border border-[rgba(255,107,107,0.25)]',
 };
 
-export default function DestinationCard({ destination, isSelected, onSelect, index }) {
+export default function DestinationCard({ destination, isSelected, index }) {
+  const navigate = useNavigate();
+
+  const handleSelect = () => navigate(`/destination/${destination.slug}`);
+
   return (
     <motion.article
       layout
@@ -30,8 +35,8 @@ export default function DestinationCard({ destination, isSelected, onSelect, ind
       style={{ aspectRatio: '4/5' }}
       role="article"
       tabIndex={0}
-      onClick={() => onSelect(destination)}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(destination); } }}
+      onClick={handleSelect}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleSelect(); } }}
     >
       {/* 이미지 */}
       <figure className="absolute inset-0 m-0">

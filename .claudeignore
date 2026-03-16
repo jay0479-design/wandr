@@ -1,0 +1,10 @@
+﻿*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.ico
+*.bmp
+public/images/
+public/assets/

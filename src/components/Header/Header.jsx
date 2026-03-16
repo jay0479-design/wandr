@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { href: '#destinations', label: '여행지 탐색' },
   { href: '#detail-panel', label: '상세 정보' },
   { href: '#vlog-feed', label: '브이로그' },
-  { href: '#tips', label: '실전 팁' },
+  { href: '/community', label: '커뮤니티' },
 ];
 
 export default function Header({ onCouponClick }) {

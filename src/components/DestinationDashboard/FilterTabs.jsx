@@ -22,7 +22,7 @@ export default function FilterTabs({ activeFilter, onFilterChange }) {
     <div
       role="tablist"
       aria-label="여행지 필터"
-      className="flex gap-2 overflow-x-auto pb-2 no-scrollbar"
+      className="flex gap-2 overflow-x-auto py-1 px-1 -mx-1 no-scrollbar"
     >
       {filterCategories.map(({ id, label }, idx) => {
         const isActive = activeFilter === id;

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import DestinationDashboard from './components/DestinationDashboard/DestinationDashboard';
@@ -10,23 +11,16 @@ import DomesticCities from './components/DomesticCities/DomesticCities';
 import CouponFAB from './components/CouponSystem/CouponFAB';
 import Footer from './components/Footer/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
+import CommunityPage from './components/Community/CommunityPage';
+import DestinationDetailPage from './components/DestinationDetail/DestinationDetailPage';
 import { AppProvider } from './context/AppContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function AppContent() {
+function HomePage({ isCouponOpen, setIsCouponOpen }) {
   const [selectedDestination, setSelectedDestination] = useState(null);
-  const [isCouponOpen, setIsCouponOpen] = useState(false);
 
   return (
     <>
-      {/* 접근성: 본문 바로가기 */}
-      <a href="#main-content" className="skip-link">
-        본문 바로가기
-      </a>
-
-      {/* 고정 글래스 네비게이션 */}
-      <Header onCouponClick={() => setIsCouponOpen(true)} />
-
       <main id="main-content">
         {/* S01 — 풀스크린 히어로 */}
         <Hero onDestinationSelect={setSelectedDestination} />
@@ -156,6 +150,43 @@ function AppContent() {
         isOpen={isCouponOpen}
         onToggle={() => setIsCouponOpen((p) => !p)}
       />
+    </>
+  );
+}
+
+function AppContent() {
+  const [isCouponOpen, setIsCouponOpen] = useState(false);
+
+  return (
+    <>
+      {/* 접근성: 본문 바로가기 */}
+      <a href="#main-content" className="skip-link">
+        본문 바로가기
+      </a>
+
+      {/* 고정 글래스 네비게이션 */}
+      <Header onCouponClick={() => setIsCouponOpen(true)} />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomePage
+              isCouponOpen={isCouponOpen}
+              setIsCouponOpen={setIsCouponOpen}
+            />
+          }
+        />
+        <Route path="/destination/:slug" element={<DestinationDetailPage />} />
+        <Route
+          path="/community"
+          element={
+            <main id="main-content" className="min-h-screen dark:bg-void bg-slate-50 pt-16">
+              <CommunityPage />
+            </main>
+          }
+        />
+      </Routes>
     </>
   );
 }

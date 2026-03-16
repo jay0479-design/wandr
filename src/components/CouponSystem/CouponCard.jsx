@@ -34,7 +34,7 @@ export default function CouponCard({ coupon }) {
       <div className="flex">
         {/* 왼쪽 — 할인 정보 */}
         <div
-          className={`flex flex-col items-center justify-center px-5 py-6 min-w-[90px] bg-gradient-to-br ${coupon.color} flex-shrink-0`}
+          className={`flex flex-col items-center justify-center px-4 py-6 w-[100px] sm:w-[108px] bg-gradient-to-br ${coupon.color} flex-none`}
           aria-hidden="true"
         >
           <span className="text-2xl font-black text-white leading-none">{coupon.discount}</span>
@@ -50,7 +50,7 @@ export default function CouponCard({ coupon }) {
         />
 
         {/* 오른쪽 — 상세 정보 */}
-        <div className="flex-1 px-5 py-4 space-y-2.5">
+        <div className="flex-1 min-w-0 px-4 py-4 space-y-2.5 pr-4">
           {/* 배지 + 공급사 */}
           <div className="flex items-center gap-2">
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/10 text-[#9090A8]">
@@ -64,8 +64,8 @@ export default function CouponCard({ coupon }) {
           </div>
 
           {/* 제목 */}
-          <p className="text-sm font-bold text-white leading-snug">{coupon.title}</p>
-          <p className="text-xs text-[#5A5A70] leading-relaxed">{coupon.description}</p>
+          <p className="text-sm font-bold text-white leading-snug line-clamp-2">{coupon.title}</p>
+          <p className="text-xs text-[#5A5A70] leading-relaxed line-clamp-2">{coupon.description}</p>
 
           {/* 만료일 */}
           <div className="flex items-center gap-1.5 text-[11px] text-[#5A5A70]">

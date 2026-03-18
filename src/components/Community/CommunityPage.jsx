@@ -85,7 +85,7 @@ function RoomList({ onSelectRoom }) {
       {/* 방 그리드 */}
       <motion.div
         layout
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6"
       >
         <AnimatePresence mode="popLayout">
           {filtered.map((room, i) => (

@@ -12,8 +12,12 @@ import CouponFAB from './components/CouponSystem/CouponFAB';
 import Footer from './components/Footer/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
 import CommunityPage from './components/Community/CommunityPage';
+import VlogPage from './components/VlogPage/VlogPage';
 import DestinationDetailPage from './components/DestinationDetail/DestinationDetailPage';
+import EventPage from './components/Event/EventPage';
+import MyPage from './components/MyPage/MyPage';
 import { AppProvider } from './context/AppContext';
+import { UserProvider } from './context/UserContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function HomePage({ isCouponOpen, setIsCouponOpen }) {
@@ -186,6 +190,30 @@ function AppContent() {
             </main>
           }
         />
+        <Route
+          path="/vlog"
+          element={
+            <main id="main-content" className="min-h-screen dark:bg-void bg-slate-50 pt-16">
+              <VlogPage />
+            </main>
+          }
+        />
+        <Route
+          path="/event"
+          element={
+            <main id="main-content" className="min-h-screen dark:bg-void bg-slate-50 pt-16">
+              <EventPage />
+            </main>
+          }
+        />
+        <Route
+          path="/mypage"
+          element={
+            <main id="main-content" className="min-h-screen dark:bg-void bg-slate-50 pt-16">
+              <MyPage />
+            </main>
+          }
+        />
       </Routes>
     </>
   );
@@ -194,7 +222,9 @@ function AppContent() {
 export default function App() {
   return (
     <AppProvider>
-      <AppContent />
+      <UserProvider>
+        <AppContent />
+      </UserProvider>
     </AppProvider>
   );
 }

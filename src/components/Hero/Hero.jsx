@@ -54,11 +54,11 @@ export default function Hero({ onDestinationSelect }) {
     <section
       id="hero"
       aria-label="히어로 — 여행지 탐색 시작"
-      className="relative w-full overflow-hidden"
+      className="relative w-full"
       style={{ height: '100svh', minHeight: '600px' }}
     >
       {/* 배경 이미지 */}
-      <div className="absolute inset-0 z-0" aria-hidden="true">
+      <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
         <img
           src={HERO_IMAGES[0]}
           alt=""

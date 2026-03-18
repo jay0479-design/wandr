@@ -56,6 +56,17 @@ export const communityRooms = [
     tags: ['뉴욕', '하와이', 'LA', '자유여행'],
   },
   {
+    id: 'taiwan',
+    slug: 'taiwan',
+    title: '🇹🇼 대만 여행',
+    description: '타이베이·지우펀·르웨탄·타이루거 등 대만 전역 여행 정보와 현지 꿀팁을 나눠요.',
+    coverImage: 'https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800&q=80&auto=format&fit=crop',
+    region: '해외',
+    postCount: 638,
+    memberCount: 4210,
+    tags: ['타이베이', '지우펀', '야시장', '천등'],
+  },
+  {
     id: 'travel-tips',
     slug: 'travel-tips',
     title: '💡 여행 꿀팁',

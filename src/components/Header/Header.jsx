@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Ticket, Menu, X, Globe, Compass } from 'lucide-react';
+import { Ticket, Menu, X, Globe, Compass, User } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const NAV_LINKS = [
   { href: '#destinations', label: '여행지 탐색' },
-  { href: '#detail-panel', label: '상세 정보' },
-  { href: '#vlog-feed', label: '브이로그' },
+  { href: '/vlog', label: '브이로그' },
   { href: '/community', label: '커뮤니티' },
+  { href: '/event', label: '이벤트' },
 ];
 
 export default function Header({ onCouponClick }) {
@@ -100,6 +100,15 @@ export default function Header({ onCouponClick }) {
             <Globe size={16} aria-hidden="true" />
           </button>
 
+          {/* 마이페이지 아이콘 */}
+          <a
+            href="/mypage"
+            aria-label="마이페이지"
+            className="hidden sm:flex w-9 h-9 rounded-full glass items-center justify-center text-[#9090A8] hover:text-white transition-colors duration-200"
+          >
+            <User size={16} aria-hidden="true" />
+          </a>
+
           {/* 테마 토글 */}
           <ThemeToggle />
 
@@ -169,11 +178,26 @@ export default function Header({ onCouponClick }) {
                   </a>
                 </motion.li>
               ))}
-              {/* 모바일 쿠폰 버튼 */}
+              {/* 모바일 마이페이지 링크 */}
               <motion.li
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: NAV_LINKS.length * 0.06, duration: 0.3 }}
+              >
+                <a
+                  href="/mypage"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-2 py-3 text-base font-medium text-[#9090A8] hover:text-white transition-colors"
+                >
+                  <User size={16} aria-hidden="true" />
+                  마이페이지
+                </a>
+              </motion.li>
+              {/* 모바일 쿠폰 버튼 */}
+              <motion.li
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: (NAV_LINKS.length + 1) * 0.06, duration: 0.3 }}
                 className="pt-3"
               >
                 <button

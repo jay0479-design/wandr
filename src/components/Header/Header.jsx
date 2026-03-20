@@ -4,7 +4,7 @@ import { Ticket, Menu, X, Globe, Compass, User } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const NAV_LINKS = [
-  { href: '#destinations', label: '여행지 탐색' },
+  { href: '/', label: '여행지 탐색' },
   { href: '/vlog', label: '브이로그' },
   { href: '/community', label: '커뮤니티' },
   { href: '/event', label: '이벤트' },

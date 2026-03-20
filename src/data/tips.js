@@ -75,6 +75,74 @@ export const tipsByDestination = {
       ],
     },
   },
+  // ─── 중국 여행지 공통 팁 (충칭 6개 slug 공유) ────────────
+  'chongqing-night-ride': {
+    transport: {
+      icon: '🚇',
+      title: '교통 & 앱 필수 가이드',
+      content: [
+        { type: 'tip', text: '📱 디디추싱(滴滴出行) 앱 필수 설치 — 중국 최대 차량호출 앱. 한국 카드 등록 가능.' },
+        { type: 'tip', text: '🚇 충칭 지하철 1~10호선 — 교통카드(通卡) 또는 위챗페이 QR코드 결제.' },
+        { type: 'tip', text: '🚡 충칭 모노레일(2호선) 이색 체험 — 아파트 건물 사이를 통과하는 세계 유일 노선.' },
+        { type: 'tip', text: '🚠 장강 케이블카 — 왕복 8위안. 현금 또는 위챗페이 사용.' },
+      ],
+    },
+    voltage: {
+      icon: '🔌',
+      title: '전압 & 플러그 정보',
+      content: [
+        { type: 'info', label: '전압', value: '220V / 50Hz' },
+        { type: 'info', label: '플러그 타입', value: 'A타입 (납작 2핀) — 한국 플러그 대부분 호환' },
+        { type: 'info', label: '한국 가전', value: '220V 공통으로 변압기 불필요' },
+        { type: 'tip', text: '✅ 한국 전자기기 220V 지원으로 별도 어댑터 불필요. 콘센트 모양만 확인.' },
+      ],
+    },
+    etiquette: {
+      icon: '🎎',
+      title: '현지 에티켓 & 주의사항',
+      content: [
+        { type: 'tip', text: '📸 군사시설·정부건물 촬영 금지. 일반 관광지는 문제 없음.' },
+        { type: 'tip', text: '🌶️ 충칭 훠궈 매운맛 주의 — 주문 시 "微辣(웨이라·살짝 매운맛)" 요청 가능.' },
+        { type: 'tip', text: '🤳 오토바이 촬영 체험 예약은 최소 3일 전. WeChat으로 업체 연락 필수.' },
+        { type: 'tip', text: '💬 구글 번역 앱 오프라인 중국어 팩 사전 다운로드 — VPN 없이 사용 가능.' },
+      ],
+    },
+    communication: {
+      icon: '📱',
+      title: '통신 & VPN 정보',
+      content: [
+        { type: 'tip', text: '📲 WeChat(微信) 출발 전 계정 생성 필수 — 중국 내 거의 모든 결제·예약 사용.' },
+        { type: 'tip', text: '🔒 구글·인스타·유튜브 접속 차단 — VPN 앱을 한국에서 미리 설치해 가세요.' },
+        { type: 'tip', text: '📶 중국 현지 eSIM 추천 — CMHK, 1Hong 등 한국에서 사전 구매 가능.' },
+        { type: 'tip', text: '💳 알리페이(支付宝) 국제판 — 한국 Visa/Mastercard 등록 후 현지 결제 가능.' },
+      ],
+    },
+    emergency: {
+      icon: '🆘',
+      title: '비상 연락처 & 안전 정보',
+      content: [
+        { type: 'info', label: '경찰', value: '110' },
+        { type: 'info', label: '소방·구급', value: '119' },
+        { type: 'info', label: '한국 영사관 (충칭)', value: '+86-23-6585-1073' },
+        { type: 'tip', text: '🛡️ 여행자 보험 필수 — 중국 의료비 높음. 질병·사고·도난 커버 상품 선택.' },
+        { type: 'tip', text: '📋 여권 사본·보험 증서 위챗 파일 보관 또는 카카오톡 나에게 전송.' },
+      ],
+    },
+    finance: {
+      icon: '💰',
+      title: '환전 & 결제 팁',
+      content: [
+        { type: 'tip', text: '💳 알리페이 국제판 — 한국 신용카드 연동 후 QR코드 결제. 수수료 약 3%.' },
+        { type: 'tip', text: '💵 현금 지참 — 소규모 상점·야시장은 현금만 가능. 500~1,000위안 권장.' },
+        { type: 'tip', text: '🏧 중국공상은행(ICBC) ATM — 해외 카드 인출 가능. 수수료 약 25위안.' },
+        { type: 'tip', text: '📊 환율: 1위안 ≈ 190원 (변동 있음 — 출발 전 재확인).' },
+      ],
+    },
+  },
+  'chongqing-cruise': { transport: { icon: '🚢', title: '크루즈 & 교통 가이드', content: [{ type: 'tip', text: '🚢 양강 크루즈 출발지: 조천문 선착장 (朝天门码头). 저녁 8시 편 야경 최고.' }, { type: 'tip', text: '📱 디디추싱으로 선착장까지 이동. 충칭역에서 약 15분.' }, { type: 'tip', text: '🎫 크루즈 티켓 위챗 미니프로그램 or Klook에서 사전 예약 추천.' }] }, voltage: { icon: '🔌', title: '전압 정보', content: [{ type: 'info', label: '전압', value: '220V / 50Hz' }, { type: 'tip', text: '✅ 한국 전자기기 호환. 별도 변압기 불필요.' }] }, etiquette: { icon: '🎎', title: '현지 주의사항', content: [{ type: 'tip', text: '📸 군사시설·정부건물 촬영 금지.' }, { type: 'tip', text: '🌶️ 훠궈 매운맛은 "微辣" 요청으로 조절 가능.' }] }, communication: { icon: '📱', title: '통신 정보', content: [{ type: 'tip', text: '📲 WeChat 사전 계정 생성 필수.' }, { type: 'tip', text: '🔒 VPN 한국에서 미리 설치 필요.' }, { type: 'tip', text: '💳 알리페이 국제판 한국 카드 연동 후 결제.' }] }, emergency: { icon: '🆘', title: '비상 연락처', content: [{ type: 'info', label: '경찰', value: '110' }, { type: 'info', label: '한국 영사관(충칭)', value: '+86-23-6585-1073' }] }, finance: { icon: '💰', title: '환전 & 결제', content: [{ type: 'tip', text: '💳 알리페이 국제판으로 QR 결제.' }, { type: 'tip', text: '📊 1위안 ≈ 190원.' }] } },
+  'shanghai-bund': { transport: { icon: '🚇', title: '교통 가이드', content: [{ type: 'tip', text: '🚇 와이탄 접근: 지하철 2호선 난징동루역 하차 후 도보 10분.' }, { type: 'tip', text: '🚢 황푸강 유람선 출발지: 와이탄 14번 부두 (十六铺).' }, { type: 'tip', text: '🌉 오전에는 클래식 건축 감상, 오후 6시 이후 야경 최적.' }] }, voltage: { icon: '🔌', title: '전압 정보', content: [{ type: 'info', label: '전압', value: '220V / 50Hz' }, { type: 'tip', text: '✅ 한국 전자기기 호환.' }] }, etiquette: { icon: '🎎', title: '현지 주의사항', content: [{ type: 'tip', text: '📸 와이탄 야경 사진 — 삼각대 사용은 인파 많은 곳 주의.' }, { type: 'tip', text: '🎫 동방명주 전망대 입장권 Klook 사전 구매 시 10~20% 할인.' }] }, communication: { icon: '📱', title: '통신 정보', content: [{ type: 'tip', text: '📲 WeChat 사전 계정 생성 필수.' }, { type: 'tip', text: '🔒 VPN 한국에서 미리 설치.' }, { type: 'tip', text: '💳 알리페이 국제판 한국 카드 연동.' }] }, emergency: { icon: '🆘', title: '비상 연락처', content: [{ type: 'info', label: '경찰', value: '110' }, { type: 'info', label: '한국 총영사관(상하이)', value: '+86-21-6295-5000' }] }, finance: { icon: '💰', title: '환전 & 결제', content: [{ type: 'tip', text: '💳 알리페이 국제판으로 QR 결제.' }, { type: 'tip', text: '📊 1위안 ≈ 190원.' }] } },
+  'chongqing-hotpot': { transport: { icon: '🚇', title: '교통 가이드', content: [{ type: 'tip', text: '🚇 충칭 해방비 훠궈거리: 지하철 1호선 소룡사역(小龙坎站) 하차.' }, { type: 'tip', text: '📱 디디추싱으로 훠궈 맛집 직행. 주소는 WeChat으로 공유.' }, { type: 'tip', text: '🌶️ 훠궈 대기줄이 긴 경우 WeChat 미니프로그램으로 원격 번호표 가능.' }] }, voltage: { icon: '🔌', title: '전압 정보', content: [{ type: 'info', label: '전압', value: '220V / 50Hz' }, { type: 'tip', text: '✅ 한국 전자기기 호환.' }] }, etiquette: { icon: '🎎', title: '현지 주의사항', content: [{ type: 'tip', text: '🌶️ 충칭 훠궈 기본 매운맛도 한국 불닭볶음면보다 강함. "微辣" 꼭 요청.' }, { type: 'tip', text: '🎭 변검 공연 중 사진 촬영 가능하지만 플래시 금지.' }, { type: 'tip', text: '🍢 훠궈 재료 가격 미리 확인 — 일부 식당 재료별 단가 다름.' }] }, communication: { icon: '📱', title: '통신 정보', content: [{ type: 'tip', text: '📲 WeChat 사전 계정 생성 필수.' }, { type: 'tip', text: '🔒 VPN 한국에서 미리 설치.' }, { type: 'tip', text: '💳 알리페이 국제판 한국 카드 연동.' }] }, emergency: { icon: '🆘', title: '비상 연락처', content: [{ type: 'info', label: '경찰', value: '110' }, { type: 'info', label: '한국 영사관(충칭)', value: '+86-23-6585-1073' }] }, finance: { icon: '💰', title: '환전 & 결제', content: [{ type: 'tip', text: '💵 야시장·소규모 식당 현금 필요. 최소 500위안 지참.' }, { type: 'tip', text: '📊 1위안 ≈ 190원.' }] } },
+  'shanghai-zhujiajiao': { transport: { icon: '🚌', title: '교통 가이드', content: [{ type: 'tip', text: '🚌 상하이 → 주가각: 지하철 17호선 주가각역 하차 (약 1시간). 종착역이라 편리.' }, { type: 'tip', text: '⏰ 당일치기 추천 출발: 오후 2~3시 도착해서 일몰+야경 동시 공략.' }, { type: 'tip', text: '🚣 나룻배 선착장은 마을 입구. 왕복 50~80위안 수준.' }] }, voltage: { icon: '🔌', title: '전압 정보', content: [{ type: 'info', label: '전압', value: '220V / 50Hz' }, { type: 'tip', text: '✅ 한국 전자기기 호환.' }] }, etiquette: { icon: '🎎', title: '현지 주의사항', content: [{ type: 'tip', text: '📸 야경 명소 방생교 앞은 인기 촬영 포인트 — 평일 방문 추천.' }, { type: 'tip', text: '🏮 홍등 야경은 오후 7~9시가 가장 화려.' }] }, communication: { icon: '📱', title: '통신 정보', content: [{ type: 'tip', text: '📲 WeChat 사전 계정 생성 필수.' }, { type: 'tip', text: '🔒 VPN 한국에서 미리 설치.' }, { type: 'tip', text: '💳 알리페이 국제판 한국 카드 연동.' }] }, emergency: { icon: '🆘', title: '비상 연락처', content: [{ type: 'info', label: '경찰', value: '110' }, { type: 'info', label: '한국 총영사관(상하이)', value: '+86-21-6295-5000' }] }, finance: { icon: '💰', title: '환전 & 결제', content: [{ type: 'tip', text: '💵 나룻배·입장료 현금 결제 필요. 현금 지참 권장.' }, { type: 'tip', text: '📊 1위안 ≈ 190원.' }] } },
 };
 
 // 기본 팁 (여행지별 데이터 없을 때)

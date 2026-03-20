@@ -126,6 +126,31 @@ export const toursByDestination = {
       badge: '신규',
     },
   ],
+  'chongqing-night-ride': [
+    { id: 't-cqnr-1', title: '충칭 야경 오토바이 릴스 촬영 패키지 (의상+촬영팀 포함)', provider: 'Klook', providerColor: '#FF6B35', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', duration: '3시간', price: 89000, originalPrice: 120000, rating: 4.8, reviewCount: 312, tags: ['촬영 포함', '의상 포함', '야간'], externalUrl: 'https://www.klook.com', badge: '베스트셀러' },
+    { id: 't-cqnr-2', title: '홍야동 야경 투어 + 장강 케이블카 왕복', provider: 'Viator', providerColor: '#00AA6C', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', duration: '4시간', price: 55000, originalPrice: null, rating: 4.7, reviewCount: 189, tags: ['야경', '케이블카', '소그룹'], externalUrl: 'https://www.viator.com', badge: '신규' },
+    { id: 't-cqnr-3', title: '충칭 야경 프라이빗 투어 (차량+가이드 포함)', provider: 'GetYourGuide', providerColor: '#FF5533', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', duration: '5시간', price: 145000, originalPrice: 180000, rating: 4.9, reviewCount: 98, tags: ['프라이빗', '픽업 포함', 'VIP'], externalUrl: 'https://www.getyourguide.com', badge: '한정 특가' },
+  ],
+  'chongqing-cruise': [
+    { id: 't-cqcr-1', title: '충칭 양강 크루즈 야경 (2층 갑판석 포함)', provider: 'Klook', providerColor: '#FF6B35', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', duration: '1.5시간', price: 38000, originalPrice: 50000, rating: 4.6, reviewCount: 245, tags: ['크루즈', '야경', '선상 음료 포함'], externalUrl: 'https://www.klook.com', badge: '베스트셀러' },
+    { id: 't-cqcr-2', title: '충칭 1일 시티투어 (홍야동+조천문+해방비)', provider: 'Viator', providerColor: '#00AA6C', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', duration: '1일', price: 72000, originalPrice: null, rating: 4.7, reviewCount: 167, tags: ['1일 투어', '한국어 가이드', '식사 포함'], externalUrl: 'https://www.viator.com', badge: '신규' },
+    { id: 't-cqcr-3', title: '충칭 딥다이브 — 산악도시 트레일 + 야경 크루즈 콤보', provider: 'GetYourGuide', providerColor: '#FF5533', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', duration: '반일 (6시간)', price: 98000, originalPrice: 125000, rating: 4.8, reviewCount: 112, tags: ['콤보', '트레일', '야경'], externalUrl: 'https://www.getyourguide.com', badge: '한정 특가' },
+  ],
+  'shanghai-bund': [
+    { id: 't-shb-1', title: '황푸강 야경 유람선 1시간 (와이탄 출발)', provider: 'Klook', providerColor: '#FF6B35', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', duration: '1시간', price: 32000, originalPrice: 45000, rating: 4.6, reviewCount: 567, tags: ['유람선', '야경', '음료 포함'], externalUrl: 'https://www.klook.com', badge: '베스트셀러' },
+    { id: 't-shb-2', title: '상하이 하이라이트 1일 — 와이탄+예원+동방명주 전망대', provider: 'Viator', providerColor: '#00AA6C', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', duration: '1일', price: 88000, originalPrice: null, rating: 4.7, reviewCount: 334, tags: ['1일 투어', '전망대 입장 포함', '한국어'], externalUrl: 'https://www.viator.com', badge: '신규' },
+    { id: 't-shb-3', title: '상하이 선셋+야경 황금 크루즈 (일몰 30분 전 탑승)', provider: 'GetYourGuide', providerColor: '#FF5533', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', duration: '2시간', price: 52000, originalPrice: 68000, rating: 4.8, reviewCount: 201, tags: ['일몰+야경', '프리미엄석', '사진 명소'], externalUrl: 'https://www.getyourguide.com', badge: '한정 특가' },
+  ],
+  'chongqing-hotpot': [
+    { id: 't-cqhp-1', title: '충칭 정통 훠궈 + 변검 공연 올인원 패키지', provider: 'Klook', providerColor: '#FF6B35', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', duration: '3시간', price: 65000, originalPrice: 85000, rating: 4.9, reviewCount: 678, tags: ['식사 포함', '공연 관람', '매운맛 조절'], externalUrl: 'https://www.klook.com', badge: '베스트셀러' },
+    { id: 't-cqhp-2', title: '충칭 미식 투어 — 훠궈+소면+거리음식 현지인 코스', provider: 'Viator', providerColor: '#00AA6C', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', duration: '4시간', price: 55000, originalPrice: null, rating: 4.8, reviewCount: 412, tags: ['미식', '소그룹', '한국어 OK'], externalUrl: 'https://www.viator.com', badge: '신규' },
+    { id: 't-cqhp-3', title: '충칭 훠궈 쿠킹 클래스 + 재료 쇼핑 투어', provider: 'GetYourGuide', providerColor: '#FF5533', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', duration: '5시간', price: 92000, originalPrice: 115000, rating: 4.7, reviewCount: 189, tags: ['쿠킹 클래스', '시장 투어', '체험'], externalUrl: 'https://www.getyourguide.com', badge: '한정 특가' },
+  ],
+  'shanghai-zhujiajiao': [
+    { id: 't-shjj-1', title: '주가각 수향마을 당일치기 투어 (상하이 출발)', provider: 'Klook', providerColor: '#FF6B35', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', duration: '1일', price: 58000, originalPrice: 75000, rating: 4.7, reviewCount: 298, tags: ['당일치기', '픽업 포함', '나룻배 포함'], externalUrl: 'https://www.klook.com', badge: '베스트셀러' },
+    { id: 't-shjj-2', title: '주가각 나룻배 야경 + 홍등 포토투어 패키지', provider: 'Viator', providerColor: '#00AA6C', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', duration: '반일 (5시간)', price: 78000, originalPrice: null, rating: 4.8, reviewCount: 223, tags: ['나룻배', '야경', '인생샷'], externalUrl: 'https://www.viator.com', badge: '신규' },
+    { id: 't-shjj-3', title: '상하이 수향마을 프리미엄 투어 — 주가각+시탕 비교 탐방', provider: 'GetYourGuide', providerColor: '#FF5533', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', duration: '1일', price: 112000, originalPrice: 145000, rating: 4.9, reviewCount: 134, tags: ['프리미엄', '2개 마을', '점심 포함'], externalUrl: 'https://www.getyourguide.com', badge: '한정 특가' },
+  ],
 };
 
 // 선택된 여행지에 투어 데이터 없을 때 기본 투어

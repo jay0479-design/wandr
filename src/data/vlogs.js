@@ -244,6 +244,31 @@ export const vlogsByDestination = {
       duration: '22:05',
     },
   ],
+  'chongqing-night-ride': [
+    { videoId: 'cqnr01', title: '🏍️ 충칭 야경 오토바이 릴스 | 홍야동에서 장강대교까지', channelTitle: '충칭감성', channelAvatar: 'https://i.pravatar.cc/40?img=41', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-25T18:00:00Z', viewCount: '45만', duration: '12:30' },
+    { videoId: 'cqnr02', title: '🌃 충칭 야경 브이로그 | 3D 도시의 밤은 다르다', channelTitle: '차이나트래블러', channelAvatar: 'https://i.pravatar.cc/40?img=42', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-20T20:00:00Z', viewCount: '28만', duration: '15:45' },
+    { videoId: 'cqnr03', title: '🎬 충칭 오토바이 촬영 패키지 리뷰 | 과연 가성비는?', channelTitle: '여행리뷰어', channelAvatar: 'https://i.pravatar.cc/40?img=43', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-15T14:00:00Z', viewCount: '18만', duration: '10:20' },
+  ],
+  'chongqing-cruise': [
+    { videoId: 'cqcr01', title: '🚢 충칭 양강 크루즈 야경 | 홍야동 스카이라인이 황홀하다', channelTitle: '크루즈라이프', channelAvatar: 'https://i.pravatar.cc/40?img=44', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-22T19:00:00Z', viewCount: '31만', duration: '14:10' },
+    { videoId: 'cqcr02', title: '🌉 충칭 조천문에서 보는 장강+가릉강 합류 야경', channelTitle: '충칭감성', channelAvatar: 'https://i.pravatar.cc/40?img=41', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-15T21:00:00Z', viewCount: '19만', duration: '11:25' },
+    { videoId: 'cqcr03', title: '🏙️ 충칭 3D 입체도시 투어 | 케이블카+크루즈 원데이 코스', channelTitle: '차이나트래블러', channelAvatar: 'https://i.pravatar.cc/40?img=42', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-10T16:00:00Z', viewCount: '14만', duration: '09:50' },
+  ],
+  'shanghai-bund': [
+    { videoId: 'shb01', title: '🌆 상하이 와이탄 황푸강 유람선 | 동방명주 야경 클로즈업', channelTitle: '상하이나이트', channelAvatar: 'https://i.pravatar.cc/40?img=48', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-28T20:00:00Z', viewCount: '38만', duration: '13:20' },
+    { videoId: 'shb02', title: '🏙️ 상하이 푸동 vs 와이탄 | 낮과 밤의 극적인 대비', channelTitle: '차이나트래블러', channelAvatar: 'https://i.pravatar.cc/40?img=42', thumbnail: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-20T17:00:00Z', viewCount: '24만', duration: '10:55' },
+    { videoId: 'shb03', title: '✨ 상하이 일몰+야경 동시 공략 | 황금시간대 유람선 탑승 팁', channelTitle: '여행리뷰어', channelAvatar: 'https://i.pravatar.cc/40?img=43', thumbnail: 'https://images.unsplash.com/photo-1474181628609-0b43dbf94209?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-14T15:00:00Z', viewCount: '17만', duration: '08:45' },
+  ],
+  'chongqing-hotpot': [
+    { videoId: 'cqhp01', title: '🍲 충칭 정통 훠궈 먹방 | 매운맛 레벨 도전', channelTitle: '먹방트래블', channelAvatar: 'https://i.pravatar.cc/40?img=49', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-28T19:00:00Z', viewCount: '38만', duration: '16:20' },
+    { videoId: 'cqhp02', title: '🎭 변검 공연 + 훠궈 = 충칭 최고의 조합', channelTitle: '차이나푸디', channelAvatar: 'https://i.pravatar.cc/40?img=50', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-12T20:00:00Z', viewCount: '22만', duration: '13:10' },
+    { videoId: 'cqhp03', title: '🌶️ 충칭 vs 쓰촨 훠궈 비교 | 어디가 더 맵을까', channelTitle: '매운맛연구소', channelAvatar: 'https://i.pravatar.cc/40?img=51', thumbnail: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-08T12:00:00Z', viewCount: '19만', duration: '11:55' },
+  ],
+  'shanghai-zhujiajiao': [
+    { videoId: 'shjj01', title: '🏮 주가각 수향마을 야경 | 홍등이 물에 비치는 몽환적 풍경', channelTitle: '수향마을탐방', channelAvatar: 'https://i.pravatar.cc/40?img=52', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-03-05T17:00:00Z', viewCount: '27만', duration: '15:30' },
+    { videoId: 'shjj02', title: '🚣 주가각 나룻배 야경 브이로그 | 상하이 근교 당일치기', channelTitle: '수향마을탐방', channelAvatar: 'https://i.pravatar.cc/40?img=45', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-25T14:00:00Z', viewCount: '18만', duration: '12:15' },
+    { videoId: 'shjj03', title: '🌅 주가각 일몰+야경 황금 코스 | 오후 3시 도착이 정답인 이유', channelTitle: '인생샷연구소', channelAvatar: 'https://i.pravatar.cc/40?img=46', thumbnail: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop', publishedAt: '2026-02-18T11:00:00Z', viewCount: '13만', duration: '09:40' },
+  ],
 };
 
 export const defaultVlogs = [

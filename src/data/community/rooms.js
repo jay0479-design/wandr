@@ -16,7 +16,7 @@ export const communityRooms = [
     slug: 'europe',
     title: '🇪🇺 유럽 여행',
     description: '파리·런던·로마·바르셀로나 유럽 여행의 모든 것.',
-    coverImage: 'https://images.unsplash.com/photo-1499856871958-5b9357976b82?w=800&q=80&auto=format&fit=crop',
+    coverImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80&auto=format&fit=crop',
     region: '해외',
     postCount: 976,
     memberCount: 6340,
@@ -76,6 +76,17 @@ export const communityRooms = [
     postCount: 4820,
     memberCount: 34600,
     tags: ['항공권', '숙소', '환전', '꿀팁'],
+  },
+  {
+    id: 'china',
+    slug: 'china',
+    title: '🇨🇳 중국 이색체험',
+    description: '충칭 오토바이 릴스 · 상하이 와이탄 야경 · 훠궈 맛집 — MZ 핫트렌드 총집합',
+    coverImage: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80&auto=format&fit=crop',
+    region: '해외',
+    postCount: 18,
+    memberCount: 892,
+    tags: ['충칭', '상하이', '와이탄', '오토바이릴스', '훠궈'],
   },
 ];
 

@@ -8,7 +8,6 @@ import TourCards from './components/TourCards/TourCards';
 import VlogFeed from './components/VlogFeed/VlogFeed';
 import TipsAccordion from './components/TipsAccordion/TipsAccordion';
 import DomesticCities from './components/DomesticCities/DomesticCities';
-import ChinaTravel from './components/ChinaTravel/ChinaTravel';
 import CouponFAB from './components/CouponSystem/CouponFAB';
 import Footer from './components/Footer/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -41,9 +40,6 @@ function HomePage({ isCouponOpen, setIsCouponOpen }) {
           selectedDestination={selectedDestination}
           onSelect={setSelectedDestination}
         />
-
-        {/* S04 — 중국 이색 체험 큐레이션 */}
-        <ChinaTravel />
 
         {/* S05 — 상세 정보 패널 (여행지 선택 시 표시) */}
         <AnimatePresence>
